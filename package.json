@@ -1,5 +1,5 @@
 {
-  "name": "dsh-usage-pill",
+  "name": "@mark_future_ai/dsh-quota-meter",
   "version": "0.1.0",
   "description": "DeepSeek Harness usage pill: provider balance, subscription plan meters (OpenCode Go) and per-session cost in the composer dock row.",
   "type": "module",
@@ -60,11 +60,11 @@
   "author": "atlasmarkz",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atlasmarkz/dsh-usage-pill.git"
+    "url": "git+https://github.com/atlasmarkz/dsh-quota-meter.git"
   },
-  "homepage": "https://github.com/atlasmarkz/dsh-usage-pill#readme",
+  "homepage": "https://github.com/atlasmarkz/dsh-quota-meter#readme",
   "bugs": {
-    "url": "https://github.com/atlasmarkz/dsh-usage-pill/issues"
+    "url": "https://github.com/atlasmarkz/dsh-quota-meter/issues"
   },
   "publishConfig": {
     "access": "public"

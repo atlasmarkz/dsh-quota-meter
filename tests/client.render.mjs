@@ -16,14 +16,14 @@ let plugin
 globalThis.window = {
   __ModuleLoader__: {
     load({ id, factory }) {
-      assert.equal(id, 'dsh-usage-pill')
+      assert.equal(id, '@mark_future_ai/dsh-quota-meter')
       plugin = factory(id => requireFromHere(id))
     },
   },
 }
 new Function(source)() // eslint-disable-line no-new-func -- the artifact is a browser-style script
 
-assert.equal(plugin.name, 'dsh-usage-pill')
+assert.equal(plugin.name, '@mark_future_ai/dsh-quota-meter')
 assert.deepEqual(plugin.inject, ['slots', 'locale'])
 
 // --- apply(): registrations -------------------------------------------------

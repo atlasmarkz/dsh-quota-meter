@@ -1,4 +1,4 @@
-# dsh-usage-pill
+# dsh-quota-meter
 
 Plan usage, account balance and running cost for **DeepSeek Harness**, shown as
 one ambient row under the composer — right below the stock
@@ -14,7 +14,7 @@ session: switch sessions and the cost pill switches with them.
 ## Install
 
 ```sh
-dsh plugin --profile web add dsh-usage-pill
+dsh plugin --profile web add @mark_future_ai/dsh-quota-meter
 ```
 
 …or install it from the plugin market inside DSH. The package is plain
@@ -151,4 +151,4 @@ MIT © atlasmarkz
 - 密钥只留在宿主进程里，浏览器端拿到的只是余额、百分比和重置时间。查找顺序：配置 → 环境变量 → OpenCode 的 `auth.json` → DSH 凭据服务。
 - `本次 ≈` 是用 token 数 × 单价表算出的估算值，不是账单；默认按 DeepSeek 官方价，可在 `pricing` 里改成你实际在用的模型价格。
 
-安装：`dsh plugin --profile web add dsh-usage-pill`，首次安装后重启一次 DSH。
+安装：`dsh plugin --profile web add @mark_future_ai/dsh-quota-meter`，首次安装后重启一次 DSH。
