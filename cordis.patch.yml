@@ -1,0 +1,21 @@
+# dsh-usage-pill bundle patch — the layer `dsh plugin add` merges into a profile.
+#
+# Deliberately a plain `id` + `name` insert: that shape is hot-mountable, so the
+# market can switch the plugin on without a restart. Defaults live in
+# lib/index.js (DeepSeek balance + OpenCode Go plan, DeepSeek list prices), so a
+# bare insert already shows something useful.
+#
+# To change the poll interval, the price table or the source list, target the
+# same plugin id from your profile's cordis.patch.yml:
+#
+#   - id: usage-meter
+#     config:
+#       refreshMs: 30000
+#       pricing: { currency: CNY, input: 2, output: 3, cacheRead: 0.2, cacheWrite: 2 }
+#       sources:
+#         - { id: deepseek, kind: deepseek-balance, label: DeepSeek, apiKeyEnv: DEEPSEEK_API_KEY }
+#         - { id: opencode-go, kind: opencode-go, label: OpenCode Go, apiKeyEnv: OPENCODE_GO_API_KEY }
+
+- insert:
+    - id: usage-meter
+      name: dsh-usage-pill
